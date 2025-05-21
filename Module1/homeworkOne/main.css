@@ -1,0 +1,81 @@
+/*
+  main.css
+  Styles for Assignment 1
+  - Sets up layout, colors, and typography for the web page
+*/
+
+body{
+    /* Set default font for the page */
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    /* Navigation bar layout and background */
+    display:flex;
+    background-color: #FEEE91;
+    justify-content: space-around;
+    padding: 2vh 5vw;
+}
+img{
+    /* Style images for consistent size and spacing */
+    padding:2vw;
+    width:15vw;
+    max-height: 25vh;
+}
+h1{
+    /* Add space to the right of headings */
+    padding-right: 1vw;
+}
+p{
+    /* Add horizontal padding to paragraphs */
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+a{
+    /* Style links for emphasis */
+    font-weight: bolder;
+    font-size: 18px;
+}
+a:link{
+    /* Remove underline and set link color */
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+a:hover{
+    /* Change color on hover */
+    color:rgb(100,100,100);
+}
+a:visited{
+    /* Set color for visited links */
+    color: rgb(30, 30, 30);
+}
+.container{
+    /* Grid layout for main content sections */
+    display: grid;
+    row-gap: 1vh;
+    height: 100vh;
+}
+.content-div{
+    /* Flex layout for each content section */
+    height: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#yellow{
+    /* Background for HTML section */
+    background-color: #F9F3CC;
+}
+#blue{
+    /* Background for JavaScript section */
+    background-color: #D2E0FB; 
+}
+#dark-blue{
+    /* Background for Python section */
+    background-color: #8EACCD;
+}
+#green{
+    /* Background for CSS section */
+    background-color: #D7E5CA;
+}
