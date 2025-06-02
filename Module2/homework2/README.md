@@ -3,5 +3,5 @@
 ### Task:
 - Use Sass
 - Make Homepage Identical to img
-  ![alt text](/Module2/assignment/res/Home.jpg)
+  ![alt text](/Module2/homework2/res/Home.jpg)
   
