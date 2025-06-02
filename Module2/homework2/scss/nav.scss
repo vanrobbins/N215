@@ -1,0 +1,37 @@
+nav{
+    height: 18.5%;
+    width: 76.5625vw;
+    margin: 0 auto;
+    border-bottom: solid 2px #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #links{
+        display: flex;
+        justify-content: space-around;
+        width:31.25vw;
+        a{
+            font-size:15px;
+            text-decoration: none;
+            color:#fff;
+        }
+        hr{
+            transform: rotate(30deg);
+            border:1px solid #EE4367;
+        }
+
+    }
+    .logo{
+        position: relative;
+        border: 2px solid #fff;
+        width: 9.3%;
+        height: 41.1%;
+        span{
+            font-size: 20px;
+            color: #fff;
+            position: absolute; 
+            bottom: -5px; 
+            left: 0;
+        }
+    }
+}

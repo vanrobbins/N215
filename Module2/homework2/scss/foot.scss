@@ -1,0 +1,67 @@
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:28.88888889%;
+    width: 100%;
+    background-color: #EE4367;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    .logo{
+        position: relative;
+        border: 2px solid #fff;
+        width: 9.3%;
+        height: 9.15164835%;
+        span{
+            font-size: 20px;
+            color: #fff;
+            position: absolute; 
+            bottom: -5px; 
+            left: 0;
+        }
+    }
+    #about{
+        h2{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+    #signup{
+        height: 13.18681319%;
+        width: 54.375%;
+        display: flex;
+        input{
+            text-align: center;
+            height: 100%;
+            width: 76.00574713%;
+            background-color: #F56B88;
+            color: rgba(255,255,255,0.5);
+            border: none;
+        }
+        button{
+            border:none;
+            text-decoration: none;
+            font-size: 16;
+            height: 100%;
+            width: 23.99425287%;
+            color:#EE4367;
+            background-color: #fff;
+            text-align: center;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+    #socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px
+    }
+    #copyright{
+        h4{
+            color:rgba(255,255,255,0.5);
+        }
+    }
+}
