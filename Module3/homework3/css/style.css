@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Gill Sans"; /* Give your font a name */
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype"); /* Path to your font file */
+}
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/PTSerif-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/PTSerif-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/PTSerif-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/PTSerif-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../fonts/Gill-Sans-Font-Family/Gill Sans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../fonts/Gill-Sans-Font-Family/Gill Sans Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../fonts/Gill-Sans-Font-Family/Gill Sans Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Gill Sans";
+  src: url("../fonts/Gill-Sans-Font-Family/Gill Sans Bold Italic.otf") format("opentype");
+  font-weight: bold;
+  font-style: italic;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.serif {
+  font-family: "PT Serif", serif;
+}
+
+nav {
+  height: 18.5%;
+  width: 76.5625vw;
+  margin: 0 auto;
+  border-bottom: solid 2px #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav #links {
+  display: flex;
+  justify-content: space-around;
+  width: 31.25vw;
+}
+nav #links a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+nav #links hr {
+  transform: rotate(30deg);
+  border: 1px solid #EE4367;
+}
+nav .logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border: 2px solid #fff;
+  width: 9.3%;
+  height: 41.1%;
+  min-width: 120px;
+  min-height: 40px;
+  background: transparent;
+  position: relative;
+}
+nav .logo span {
+  font-size: 28px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: -5px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  nav {
+    width: 95vw;
+  }
+  nav .logo {
+    width: 22%;
+    min-width: 75px;
+  }
+  nav .logo span {
+    font-size: 24px;
+    padding-left: 6px;
+  }
+  nav #links {
+    width: 50vw;
+  }
+  nav #links a {
+    font-size: 13px;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  nav .logo {
+    min-width: 80px;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+  nav .logo span {
+    font-size: 20px;
+    padding-left: 4px;
+  }
+  nav #links {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+  nav #links a {
+    font-size: 12px;
+  }
+}
+#headSection {
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../img/hero.png);
+  background-position: center;
+  height: 69.4444444531vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#headContentContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 81.5%;
+}
+
+#headContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 56vw;
+  height: 62.5%;
+}
+#headContent h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 40px;
+}
+#headContent h2 {
+  margin: 10px 0 0 0;
+  color: #EE4367;
+  font-size: 20px;
+}
+#headContent h3 {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 1.5vh 2vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #EE4367;
+}
+
+@media (max-width: 900px) {
+  #headContent {
+    width: 80vw;
+  }
+  #headContent h1 {
+    font-size: 32px;
+  }
+  #headContent h2, #headContent h3 {
+    font-size: 18px;
+  }
+  #headSection {
+    height: 50vh;
+  }
+}
+@media (max-width: 600px) {
+  #headContent {
+    width: 100%;
+    height: auto;
+  }
+  #headContent h1 {
+    font-size: 24px;
+  }
+  #headContent h2, #headContent h3 {
+    font-size: 15px;
+  }
+  #headSection {
+    height: 38vh;
+    min-height: 300px;
+  }
+  button {
+    font-size: 14px;
+    padding: 1vh 4vw;
+  }
+}
+#quoteSection {
+  height: 41.6666666719vh;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#quoteContent {
+  width: 70%;
+}
+#quoteContent h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #FFD140;
+}
+
+#personTitle h3 {
+  font-size: 18px;
+  color: #EE4367;
+}
+#personTitle h4 {
+  font-size: 14px;
+  color: #A8A8A8;
+}
+
+@media (max-width: 900px) {
+  #quoteContent {
+    width: 85%;
+  }
+  #quoteContent h3 {
+    font-size: 18px;
+  }
+  #personTitle h3 {
+    font-size: 15px;
+  }
+  #personTitle h4 {
+    font-size: 12px;
+  }
+  #quoteSection {
+    height: 32vh;
+  }
+}
+@media (max-width: 600px) {
+  #quoteContent {
+    width: 98%;
+  }
+  #quoteContent h3 {
+    font-size: 15px;
+  }
+  #personTitle h3 {
+    font-size: 13px;
+  }
+  #personTitle h4 {
+    font-size: 11px;
+  }
+  #quoteSection {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+#eventSection {
+  min-height: 44.44444445vh;
+  padding: 60px 10%;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #540D6E;
+  display: flex;
+  flex-direction: column;
+}
+
+#eventHeader {
+  width: 30.625%;
+  border-bottom: 2px solid #fff;
+}
+#eventHeader h1 {
+  font-weight: bolder;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+#eventsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 5%;
+  padding-bottom: 10px;
+  align-items: stretch;
+  width: 100%;
+}
+#eventsContainer .singleEvent {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 1 220px;
+  max-width: 220px;
+  min-width: 180px;
+  box-sizing: border-box;
+}
+#eventsContainer .singleEvent .date {
+  background-color: #EE4367;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+#eventsContainer .singleEvent .date h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+#eventsContainer .singleEvent .date h3 {
+  font-size: 15px;
+  color: #FFFFFF;
+  margin-top: 2px;
+}
+#eventsContainer .singleEvent .eventInfo h3 {
+  line-height: 1.2;
+  font-size: 15px;
+  color: #fff;
+}
+#eventsContainer .singleEvent .eventInfo h4 {
+  line-height: 1.4;
+  font-size: 13px;
+  color: #EE4367;
+}
+
+@media (max-width: 1100px) {
+  #eventHeader {
+    width: 50%;
+  }
+  #eventsContainer {
+    gap: 30px;
+  }
+  #eventsContainer .singleEvent {
+    flex: 1 1 40%;
+    max-width: 48%;
+  }
+}
+@media (max-width: 800px) {
+  #eventHeader {
+    width: 70%;
+  }
+  #eventsContainer {
+    gap: 20px;
+  }
+  #eventsContainer .singleEvent {
+    flex: 1 1 80%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  #eventSection {
+    padding: 30px 2vw;
+  }
+  #eventHeader {
+    width: 100%;
+  }
+  #eventHeader h1 {
+    font-size: 20px;
+  }
+  #eventsContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #eventsContainer .singleEvent {
+    width: 100%;
+    flex-direction: row;
+  }
+  #eventsContainer .date {
+    width: 50px;
+    height: 50px;
+  }
+  #eventsContainer .date h2 {
+    font-size: 18px;
+  }
+  #eventsContainer .date h3 {
+    font-size: 12px;
+  }
+  #eventsContainer .eventInfo h3, #eventsContainer .eventInfo h4 {
+    font-size: 13px;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 63.1944444469vh;
+  width: 100%;
+  background-color: #EE4367;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+footer .logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border: 2px solid #fff;
+  width: 7.1203125%;
+  height: 9.15164835%;
+  min-width: 120px;
+  min-height: 40px;
+  background: transparent;
+  position: relative;
+}
+footer .logo span {
+  font-size: 28px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  text-align: left;
+  line-height: 1;
+  margin-bottom: -5px;
+  letter-spacing: 1px;
+}
+footer #about h2 {
+  text-align: center;
+  font-size: 16px;
+}
+footer #signup {
+  min-height: 56px;
+  height: 13.18681319%;
+  width: 54.375%;
+  display: flex;
+}
+footer #signup input {
+  padding-left: 1%;
+  text-align: left;
+  height: 100%;
+  width: 76.00574713%;
+  background-color: #F56B88;
+  color: rgba(255, 255, 255, 0.85);
+  border: none;
+}
+footer #signup ::-moz-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+footer #signup ::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+footer #signup button {
+  border: none;
+  text-decoration: none;
+  font-size: 16;
+  height: 100%;
+  width: 23.99425287%;
+  color: #EE4367;
+  background-color: #fff;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+footer #socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer #copyright h4 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 900px) {
+  footer {
+    height: auto;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  footer .logo {
+    margin-bottom: 20px;
+  }
+  footer .logo span {
+    font-size: 22px;
+  }
+  footer #signup {
+    width: 60%;
+    min-height: 54px;
+  }
+  footer #signup input, footer #signup button {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  footer .logo {
+    margin-bottom: 15px;
+  }
+  footer .logo span {
+    font-size: 24px;
+  }
+  footer #signup {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  footer #signup input, footer #signup button {
+    display: block;
+    width: 80%;
+    margin: 0 auto 2px auto;
+    min-height: 44px;
+    font-size: 16px;
+  }
+  footer #signup button {
+    margin-bottom: 10px;
+  }
+  footer #socials {
+    gap: 15px;
+  }
+  footer #about h2 {
+    font-size: 14px;
+  }
+}

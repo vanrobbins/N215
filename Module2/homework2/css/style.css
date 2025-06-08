@@ -4,14 +4,9 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
   height: 100%;
   width: 100%;
-}
-
-body {
-  width: 100%;
-  height: 218.75vh;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -59,7 +54,7 @@ nav .logo span {
 #headSection {
   background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../img/hero.png);
   background-position: center;
-  height: 31.74603175%;
+  height: 69.4444444531vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -114,7 +109,7 @@ button {
 }
 
 #quoteSection {
-  height: 19.04761905%;
+  height: 41.6666666719vh;
   width: 100%;
   display: flex;
   align-content: center;
@@ -141,7 +136,7 @@ button {
 }
 
 #eventSection {
-  height: 20.31746032%;
+  height: 44.44444445vh;
   padding: 60px 10%;
   box-sizing: border-box;
   width: 100%;
@@ -211,7 +206,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 28.88888889%;
+  height: 63.1944444469vh;
   width: 100%;
   background-color: #EE4367;
   padding-top: 5%;
@@ -240,7 +235,8 @@ footer #signup {
   display: flex;
 }
 footer #signup input {
-  text-align: center;
+  padding-left: 1%;
+  text-align: left;
   height: 100%;
   width: 76.00574713%;
   background-color: #F56B88;
