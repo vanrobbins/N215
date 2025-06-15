@@ -1,0 +1,66 @@
+#quoteSection{
+    height: 41.6666666719vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#quoteContent{
+    width:70%;
+    h3{
+        font-size: 22px;
+        font-weight: 400;
+        color:#FFD140;
+    }
+}
+#personTitle{
+    h3{
+        font-size: 18px;
+        color:#EE4367;
+    }
+    h4{
+        font-size:14px;
+        color: #A8A8A8;
+    }
+}
+
+// --- Responsive Media Queries ---
+
+@media (max-width: 900px) {
+    #quoteContent {
+        width: 85%;
+        h3 { font-size: 18px; }
+    }
+    #personTitle{
+        h3{
+        font-size: 15px;
+        }
+        h4{
+            font-size: 12px;
+        }
+    } 
+
+    #quoteSection {
+        height: 32vh;
+    }
+}
+
+@media (max-width: 600px) {
+    #quoteContent {
+        width: 98%;
+        h3 { font-size: 15px; }
+    }
+    #personTitle{
+        h3{
+        font-size: 13px;
+        }
+        h4{
+            font-size: 11px;
+        }
+    } 
+    #quoteSection {
+        height: auto;
+        padding: 20px 0;
+    }
+}

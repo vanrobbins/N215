@@ -1,0 +1,116 @@
+.gall {
+	width: 76.5625vw;
+	height: 99.2361111191vh;
+	margin: 0 auto;
+	padding: 9.5972222233vh 0 8.333333334vh 0;
+	color: #000;
+	#gallery-title {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: 400;
+		border-bottom: solid 2px #000;
+		padding-right: 2.34375vw;
+		padding-bottom: 2.25vh;
+		margin-bottom: 1vh;
+	}
+	.gallery-images {
+		width: 100%;
+		height: 71.25vh;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: 1fr 2fr;
+		grid-template-areas:
+			"a a a a a a b b c c c c"
+			"d d d d d d d e e e e e";
+		grid-gap: 10px; // adjust gutter
+
+		.gallery-image {
+			display: block; // make <a> fill its cell
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			cursor: pointer;
+
+			&.yellow {
+				grid-area: a;
+				background-image: linear-gradient(
+						rgba(255, 209, 64, 0.7),
+						rgba(255, 209, 64, 0.7)
+					),
+					url(../img/1.png);
+			} // large top-left
+			&.red {
+				grid-area: b;
+				background-image: linear-gradient(
+						rgba(238, 67, 103, 0.7),
+						rgba(238, 67, 103, 0.7)
+					),
+					url(../img/2.png);
+			} // small top-center
+			&.green {
+				grid-area: c;
+				background-image: linear-gradient(
+						rgba(8, 173, 105, 0.7),
+						rgba(8, 173, 105, 0.7)
+					),
+					url(../img/3.png);
+			} // small top-right
+			&.purple {
+				grid-area: d;
+				background-image: linear-gradient(
+						rgba(84, 13, 110, 0.7),
+						rgba(84, 13, 110, 0.7)
+					),
+					url(../img/4.png);
+			} // large bottom-left
+			&.blue {
+				grid-area: e;
+				background-image: linear-gradient(
+						rgba(59, 206, 171, 0.7),
+						rgba(59, 206, 171, 0.7)
+					),
+					url(../img/5.png);
+			} // small bottom-right
+		}
+	}
+}
+
+// --- Responsive Media Queries ---
+
+@media (max-width: 900px) {
+	.gall {
+		width: 95vw;
+		padding: 10vh 0 6vh 0;
+	}
+	.gall #gallery-title {
+		font-size: 22px;
+		padding-right: 4vw;
+		padding-bottom: 2vh;
+		margin-bottom: 3vh;
+	}
+	.gall .gallery-images {
+		height: 50vh;
+		grid-gap: 14px;
+	}
+}
+
+@media (max-width: 600px) {
+	.gall {
+		width: 100%;
+		padding: 8vh 2vw 4vh 2vw;
+	}
+	.gall #gallery-title {
+		font-size: 18px;
+		padding-right: 3vw;
+		padding-bottom: 1.5vh;
+		margin-bottom: 2vh;
+	}
+	.gall .gallery-images {
+		height: 32vh;
+		grid-gap: 8px;
+	}
+}

@@ -1,0 +1,153 @@
+.main-gall-content {
+	width: 76.5625vw;
+	height: 99.2361111191vh;
+	margin: 0 auto;
+	padding: 12.8472222233vh 0 10.1388888897vh 0;
+	color: #000;
+	.hero-gall {
+		width: 100%;
+		height: 55.6250000045vh;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		&.yellow {
+			background-image: linear-gradient(
+					rgba(255, 209, 64, 0.7),
+					rgba(255, 209, 64, 0.7)
+				),
+				url(../img/1.png);
+			color: #ffd140;
+		}
+		&.red {
+			background-image: linear-gradient(
+					rgba(238, 67, 103, 0.7),
+					rgba(238, 67, 103, 0.7)
+				),
+				url(../img/2.png);
+			color: #ee4367;
+		}
+		&.green {
+			background-image: linear-gradient(
+					rgba(8, 173, 105, 0.7),
+					rgba(8, 173, 105, 0.7)
+				),
+				url(../img/3.png);
+			color: #08ad69;
+		}
+		&.purple {
+			background-image: linear-gradient(
+					rgba(84, 13, 110, 0.7),
+					rgba(84, 13, 110, 0.7)
+				),
+				url(../img/4.png);
+			color: #540d6e;
+		}
+		&.blue {
+			background-image: linear-gradient(
+					rgba(59, 206, 171, 0.7),
+					rgba(59, 206, 171, 0.7)
+				),
+				url(../img/5.png);
+			color: #3bceab;
+		}
+		.title {
+			margin-bottom: -8.5vh;
+			position: absolute;
+			bottom: 0;
+			.num {
+				font-size: 300px;
+			}
+			.text {
+				font-size: 140px;
+			}
+		}
+	}
+	.row {
+		margin-top: 6.944444445vh;
+		display: flex;
+		p {
+			font-size: 16px;
+		}
+		.column {
+			flex: 1;
+			padding: 0.78125vw;
+		}
+	}
+}
+
+// --- Responsive Media Queries ---
+
+@media (max-width: 900px) {
+	.main-gall-content {
+		width: 95vw;
+		padding: 8vh 2.5%;
+
+		.hero-gall {
+			position: relative;
+			height: 45vh;
+			margin-bottom: -2.5vh;
+
+			.title {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				margin-bottom: -4vh;
+				.num {
+					font-size: 180px; // added units
+				}
+				.text {
+					font-size: 80px;
+				}
+			}
+		}
+
+		.row {
+			flex-wrap: wrap;
+			margin-top: 15vh;
+
+			.column {
+				flex: 1 1 calc(50% - 1.5625vw);
+				padding: 0.5vw;
+			}
+
+			p {
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.main-gall-content {
+		width: 100%;
+		padding: 6vh 2vw;
+
+		.hero-gall {
+			height: 35vh;
+			.title {
+				.num {
+					font-size: 120px;
+				}
+				.text {
+					font-size: 60px;
+				}
+			}
+		}
+
+		.row {
+			display: flex;
+			flex-direction: column;
+			margin-top: 10vh;
+			.column {
+				width: 100%;
+				padding: 1vw 0;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}

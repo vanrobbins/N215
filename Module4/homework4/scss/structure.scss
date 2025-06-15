@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: "Gill Sans"; /* Give your font a name */
+	src: url("../fonts/Roboto-Regular.ttf") format("truetype"); /* Path to your font file */
+}
+@font-face {
+	font-family: "PT Serif";
+	src: url("../fonts/PTSerif-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PT Serif";
+	src: url("../fonts/PTSerif-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PT Serif";
+	src: url("../fonts/PTSerif-Italic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "PT Serif";
+	src: url("../fonts/PTSerif-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Gill Sans";
+	src: url("../fonts/Gill-Sans-Font-Family/Gill Sans.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gill Sans";
+	src: url("../fonts/Gill-Sans-Font-Family/Gill Sans Bold.otf")
+		format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gill Sans";
+	src: url("../fonts/Gill-Sans-Font-Family/Gill Sans Italic.otf")
+		format("opentype");
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Gill Sans";
+	src: url("../fonts/Gill-Sans-Font-Family/Gill Sans Bold Italic.otf")
+		format("opentype");
+	font-weight: bold;
+	font-style: italic;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	margin-bottom: 5px;
+}
+.serif {
+	font-family: "PT Serif", serif;
+}

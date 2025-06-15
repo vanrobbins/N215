@@ -1,0 +1,134 @@
+#eventSection{
+    min-height: 44.44444445vh;
+    padding: 60px 10%;                   
+    box-sizing: border-box;
+    width:100%;
+    background-color: #540D6E;
+    display: flex;
+    flex-direction: column;
+}
+#eventHeader{
+    width:30.625%;
+    border-bottom: 2px solid #fff; 
+    h1{
+        font-weight: bolder;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+}
+#eventsContainer {
+    display: flex;
+    flex-wrap: wrap;                  
+    gap: 40px;                          
+    margin-top: 5%;
+    padding-bottom: 10px;
+    align-items: stretch; // ensures all events stretch to same height
+    width: 100%;
+    .singleEvent{
+        display: flex;
+        align-items: flex-start;
+        flex: 1 1 220px; // grow, shrink, basis
+        max-width: 220px;
+        min-width: 180px;
+        box-sizing: border-box;
+        .date{
+            background-color: #EE4367;        
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;                  
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;               // space between date box and text
+
+            h2{
+                font-size: 22px;
+                font-weight: bold;
+                color: #FFFFFF;
+            }
+            h3{
+                font-size: 15px;
+                color: #FFFFFF;
+                margin-top: 2px;
+            }
+        }
+        .eventInfo{
+            h3{
+                line-height: 1.2;
+                font-size: 15px;
+                color: #fff;
+            }
+            h4{
+                line-height: 1.4;
+                font-size: 13px;
+                color:#EE4367
+            }
+        }
+    }
+}
+
+// --- Responsive Media Queries ---
+
+@media (max-width: 1100px) {
+    #eventHeader {
+        width: 50%;
+    }
+    #eventsContainer {
+        gap: 30px;
+        .singleEvent {
+            flex: 1 1 40%;
+            max-width: 48%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #eventHeader {
+        width: 70%;
+    }
+    #eventsContainer {
+        gap: 20px;
+        .singleEvent {
+            flex: 1 1 80%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #eventSection {
+        padding: 30px 2vw;
+    }
+    #eventHeader {
+        width: 100%;
+        h1 {
+            font-size: 20px;
+        }
+    }
+    #eventsContainer {
+        flex-direction: column;
+        gap: 15px;
+        .singleEvent {
+            width: 100%;
+            flex-direction: row;
+        }
+        .date {
+            width: 50px;
+            height: 50px;
+            h2 {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 12px;
+            }
+        }
+        .eventInfo {
+            h3, h4 {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,78 @@
+.main-content {
+	width: 76.5625vw;
+	height: 99.2361111191vh;
+	margin: 0 auto;
+	padding: 12.8472222233vh 0;
+	color: #000;
+	.hero {
+		width: 100%;
+		height: 52.6041666709vh;
+		background-image: linear-gradient(
+				rgba(255, 209, 64, 0.8),
+				rgba(255, 209, 64, 0.8)
+			),
+			url(../img/about-hero.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-bottom: -3.4722222225vh;
+	}
+	.text {
+		#about-title {
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 25px;
+			font-weight: 400;
+			border-bottom: solid 2px #000;
+			padding-right: 2.34375vw;
+			padding-bottom: 2.25vh;
+			margin-bottom: 5.555555556vh;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+}
+
+// --- Responsive Media Queries ---
+
+@media (max-width: 900px) {
+	.main-content {
+		width: 95vw;
+		padding: 10vh 0;
+	}
+	.main-content .hero {
+		height: 45vh;
+		margin-bottom: -2.5vh;
+	}
+	.main-content .text #about-title {
+		font-size: 22px;
+		padding-right: 4vw;
+		padding-bottom: 2vh;
+		margin-bottom: 4vh;
+	}
+	.main-content .text p {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 600px) {
+	.main-content {
+		width: 100%;
+		padding: 8vh 2vw;
+	}
+	.main-content .hero {
+		height: 35vh;
+		margin-bottom: -2vh;
+	}
+	.main-content .text #about-title {
+		font-size: 18px;
+		padding-right: 3vw;
+		padding-bottom: 1.5vh;
+		margin-bottom: 3vh;
+		display: block;
+	}
+	.main-content .text p {
+		font-size: 14px;
+	}
+}
