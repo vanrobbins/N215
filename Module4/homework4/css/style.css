@@ -348,7 +348,7 @@ button {
   padding: 60px 10%;
   box-sizing: border-box;
   width: 100%;
-  background-color: #540D6E;
+  background-color: #540d6e;
   display: flex;
   flex-direction: column;
 }
@@ -358,6 +358,7 @@ button {
   border-bottom: 2px solid #fff;
 }
 #eventHeader h1 {
+  color: #fff;
   font-weight: bolder;
   font-size: 25px;
   margin-bottom: 5px;
@@ -381,7 +382,7 @@ button {
   box-sizing: border-box;
 }
 #eventsContainer .singleEvent .date {
-  background-color: #EE4367;
+  background-color: #ee4367;
   width: 60px;
   height: 60px;
   flex-shrink: 0;
@@ -394,11 +395,11 @@ button {
 #eventsContainer .singleEvent .date h2 {
   font-size: 22px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 #eventsContainer .singleEvent .date h3 {
   font-size: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 2px;
 }
 #eventsContainer .singleEvent .eventInfo h3 {
@@ -409,7 +410,7 @@ button {
 #eventsContainer .singleEvent .eventInfo h4 {
   line-height: 1.4;
   font-size: 13px;
-  color: #EE4367;
+  color: #ee4367;
 }
 
 @media (max-width: 1100px) {
@@ -464,7 +465,8 @@ button {
   #eventsContainer .date h3 {
     font-size: 12px;
   }
-  #eventsContainer .eventInfo h3, #eventsContainer .eventInfo h4 {
+  #eventsContainer .eventInfo h3,
+  #eventsContainer .eventInfo h4 {
     font-size: 13px;
   }
 }
