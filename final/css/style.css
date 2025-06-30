@@ -329,6 +329,43 @@ span {
     flex: 1 1 100%;
     max-width: 100%;
   }
+  .contact-content {
+    padding: 6vh 6% 10vh 6%;
+  }
+  .contact-content h2 {
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+  }
+  .contact-content .contact-container {
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .contact-content .contact-container .contact-image {
+    order: 2;
+    height: 32vh;
+    flex: 0 0 32vh;
+  }
+  .contact-content .contact-container .contact-form {
+    order: 1;
+  }
+  .contact-content .contact-container .contact-form p {
+    font-size: clamp(1rem, 2.8vw, 1.15rem);
+  }
+  .contact-content .contact-container .contact-form form .form-group {
+    margin-bottom: 2vh;
+  }
+  .contact-content .contact-container .contact-form form .form-group label {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+  }
+  .contact-content .contact-container .contact-form form .form-group input,
+  .contact-content .contact-container .contact-form form .form-group textarea {
+    padding: 1.8vh 3%;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+  }
+  .contact-content .contact-container .contact-form form .submit-btn {
+    width: 100%;
+    padding: 2.2vh 0;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 768px) {
   nav {
@@ -432,7 +469,16 @@ span {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
   }
   .contact-content .contact-container {
+    flex-direction: column;
     gap: 4vh;
+  }
+  .contact-content .contact-container .contact-image {
+    order: 2;
+    height: 35vh;
+    flex: 0 0 35vh;
+  }
+  .contact-content .contact-container .contact-form {
+    order: 1;
   }
   .contact-content .contact-container .contact-form p {
     font-size: clamp(1rem, 2.2vw, 1.2rem);
