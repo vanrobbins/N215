@@ -1,0 +1,20 @@
+nav {
+	height: 7.0312499955vh;
+	width: 100%;
+	max-width: 1200px;
+	background-color: $white;
+	margin: 0 auto 4.9479166635vh auto;
+	padding: 3.645833331vh 5% 2.3437499985vh 5%;
+	border-bottom: solid 3px $orange;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	a {
+		font-size: $font-size-base;
+		text-decoration: none;
+		color: $blue;
+		&.selected {
+			color: $orange;
+		}
+	}
+}

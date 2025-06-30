@@ -1,0 +1,30 @@
+// Color Palette
+$white: #fff;
+$black: #000;
+$orange: #fc5000;
+$blue: #00879e;
+$orange-overlay: rgba(#e9830d, 0.4);
+$blue-overlay: rgba($blue, 0.35);
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+// Typography
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.5rem;
+$font-size-2xl: 2rem;
+$font-size-3xl: 2.5rem;
+
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$wide: 1200px;
+
+//0.0520833333% height per pixel

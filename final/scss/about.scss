@@ -1,0 +1,46 @@
+.about-content {
+	width: 100%;
+	min-height: 65vh;
+	padding: 8vh 10.4vw 12vh 10.4vw;
+	background-color: $white;
+
+	h2 {
+		color: $black;
+		font-size: clamp(1.5rem, 2.5vw, 2rem);
+		margin-bottom: 4vh;
+		font-weight: normal;
+		text-align: left;
+		border-bottom: 2px solid $black;
+		padding-bottom: 1vh;
+		display: inline-block;
+	}
+
+	.about-hero-image {
+		width: 100%;
+		height: 35vh;
+		background-image: linear-gradient($orange-overlay, $orange-overlay),
+			url(../img/abouthero.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 6vh;
+		border-radius: 4px;
+	}
+
+	.about-text {
+		max-width: 75vw;
+		margin: 0 auto;
+		text-align: center;
+
+		p {
+			color: $black;
+			font-size: clamp(1rem, 1.8vw, 1.2rem);
+			line-height: 1.6;
+			margin-bottom: 3vh;
+
+			&:first-of-type {
+				margin-bottom: 4vh;
+			}
+		}
+	}
+}

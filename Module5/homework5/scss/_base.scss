@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, $ctp-base 0%, $ctp-mantle 100%);
+    color: $ctp-text;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90vw;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 5vh 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
