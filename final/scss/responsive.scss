@@ -396,6 +396,55 @@
 			}
 		}
 	}
+
+	.contact-content {
+		padding: 6vh 6% 10vh 6%;
+
+		h2 {
+			font-size: clamp(1.4rem, 3vw, 1.9rem);
+		}
+
+		.contact-container {
+			flex-direction: column;
+			gap: 4vh;
+
+			.contact-image {
+				order: 2;
+				height: 32vh;
+				flex: 0 0 32vh;
+			}
+
+			.contact-form {
+				order: 1;
+				
+				p {
+					font-size: clamp(1rem, 2.8vw, 1.15rem);
+				}
+
+				form {
+					.form-group {
+						margin-bottom: 2vh;
+						
+						label {
+							font-size: clamp(0.9rem, 2.5vw, 1rem);
+						}
+						
+						input,
+						textarea {
+							padding: 1.8vh 3%;
+							font-size: clamp(0.9rem, 2.5vw, 1rem);
+						}
+					}
+					
+					.submit-btn {
+						width: 100%;
+						padding: 2.2vh 0;
+						font-size: clamp(1rem, 3vw, 1.1rem);
+					}
+				}
+			}
+		}
+	}
 }
 
 // Tablet devices (601px to 768px)
@@ -535,9 +584,18 @@
 		}
 
 		.contact-container {
+			flex-direction: column;
 			gap: 4vh;
 
+			.contact-image {
+				order: 2;
+				height: 35vh;
+				flex: 0 0 35vh;
+			}
+
 			.contact-form {
+				order: 1;
+				
 				p {
 					font-size: clamp(1rem, 2.2vw, 1.2rem);
 				}
